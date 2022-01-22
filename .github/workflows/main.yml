@@ -24,8 +24,8 @@ jobs:
         uses:  docker/build-push-action@v2
         with:
           context: ./src
-          file: ./src/Dockerfile
+          file: ./src/dockerfile
           push: true
           tags: |
             guilhermecb10/rottenpotatoes:latest
-            guilhermecb10/rottenpotatoes:v1
+            guilhermecb10/rottenpotatoes:${{ github.run_number }}
