@@ -28,4 +28,4 @@ jobs:
           push: true
           tags: |
             guilhermecb10/rottenpotatoes:latest
-            guilhermecb10/rottenpotatoes:${{ github.run_number }}
+            guilhermecb10/rottenpotatoes:${{github.run_number}}
