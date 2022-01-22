@@ -49,4 +49,4 @@ jobs:
           with:
             images: guilhermecb10/rottenpotatoes:${{ github.run_number}} 
             manifests: |
-              k8s/deployment.yaml
+              deployment.yaml
