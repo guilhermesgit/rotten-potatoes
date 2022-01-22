@@ -19,3 +19,13 @@ jobs:
     
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PWD }}
+          
+      - name: Docker build and push
+        uses: docker/build-push-action@2.7.0
+        with:
+          context: ./src
+          file: ./src/Dockerfile
+          push: true
+          tags: 
+            guilhermesgit/rotten-potatoes:latest
+            guilhermesgit/rotten-potatoes:${{ github.run_number }}
