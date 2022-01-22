@@ -27,5 +27,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: 
-            guilhermesgit/rotten-potatoes:latest
-            guilhermesgit/rotten-potatoes:${{ github.run_number }}
+            guilhermecb10/rottenpotatoes:latest
+            guilhermecb10/rottenpotatoes:${{ github.run_number }}
