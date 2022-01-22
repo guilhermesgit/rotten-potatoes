@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  CI:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,6 +31,7 @@ jobs:
             guilhermecb10/rottenpotatoes:${{ github.run_number}}
             
   CD:
+      needs: [CI]
       runs-on: ubuntu-latest
       
       steps:
